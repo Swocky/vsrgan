@@ -44,11 +44,30 @@ The evaluation dataset can be download from baidu drive, and we use [val.zip](ht
 
 Quantitative Results
 -----------------
-The results are obtained from the 20 videos in val.zip.
-| PSNR | SSIM | NIQE |
-|------|------|------|
-| 0.00 | 0.00 | 0.00 |
-
+We use the 20 videos in val.zip for quantitative evaluation. Each value is averaged from all the frames (with three channels) of a video. 
+| video | PSNR | SSIM | NIQE |
+|------|------|------|------|
+| val_000 | 18.17 | 0.5253 | 2.9197 |
+| val_001 | 26.11 | 0.7897 | 4.1745 |
+| val_002 | 20.99 | 0.5573 | 2.2559 |
+| val_003 | 21.29 | 0.4760 | 2.6479 |
+| val_004 | 23.15 | 0.6637 | 2.9329 |
+| val_005 | 22.77 | 0.6415 | 2.5267 |
+| val_006 | 27.03 | 0.6821 | 3.3715 |
+| val_007 | 24.24 | 0.6394 | 3.2039 |
+| val_008 | 23.80 | 0.6187 | 2.7857 |
+| val_009 | 24.63 | 0.7498 | 3.3803 |
+| val_010 | 22.70 | 0.5712 | 2.9139 |
+| val_011 | 23.41 | 0.6392 | 3.3336 |
+| val_012 | 22.60 | 0.6127 | 2.8355 |
+| val_013 | 22.86 | 0.6389 | 3.0100 |
+| val_014 | 22.82 | 0.6369 | 2.9201 |
+| val_015 | 26.08 | 0.7792 | 3.9357 |
+| val_016 | 21.81 | 0.5416 | 2.3911 |
+| val_017 | 23.57 | 0.6128 | 3.6706 |
+| val_018 | 22.79 | 0.5165 | 3.6781 |
+| val_019 | 21.18 | 0.5046 | 3.4247 |
+| average | 23.10 | 0.6199 | 3.1156 |
 
 Visual Results
 -----------------
