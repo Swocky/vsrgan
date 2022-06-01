@@ -2,6 +2,10 @@ Video Super-Resolution GAN
 =================
 A generative method for video super-resolution which using the motion filter to make the results more stable.
 
+Pipeline
+-----------------
+![pipeline](imgs/pipeline.png)
+
 Dependencies
 -----------------
 - numpy==1.22.4
@@ -18,10 +22,7 @@ Test Model
 ```bash
 python demo.py --test_dir your_path --out_dir your_path
 ```
-
-Dataset Download
------------------
-The evaluation dataset can be download from baidu drive, and we use [val.zip](https://pan.baidu.com/s/1TNtkn_dHHQf_3_JABKWgZg#list/path=%2F) (password: pr7p) in our experiments. Don't forget to set --test_dir for demo.py.
+You can also use a bash script to run the demo as exampled in 'run.sh'.
 
 Pretrained Models Download
 -----------------
@@ -34,7 +35,22 @@ Remeber to use the command line arguments to locate the models.
 python demo.py --gen_model your_path --raft_model your_path
 ```
 
-Result Example
+Dataset Download
+-----------------
+Following ESRGAN, we use [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flick2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) to train the model.
+
+The evaluation dataset can be download from baidu drive, and we use [val.zip](https://pan.baidu.com/s/1TNtkn_dHHQf_3_JABKWgZg#list/path=%2F) (password: pr7p) in our experiments. Don't forget to set --test_dir for demo.py.
+
+
+Quantitative Results
+-----------------
+The results are obtained from the 20 videos in val.zip.
+| PSNR | SSIM | NIQE |
+|------|------|------|
+| 0.00 | 0.00 | 0.00 |
+
+
+Visual Results
 -----------------
 - Low Resolution
 
